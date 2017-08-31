@@ -1,9 +1,15 @@
-import {Directive, ElementRef} from '@angular/core';
+import {Directive, ElementRef, HostListener} from '@angular/core';
 
 @Directive({
     selector: '[ng4-file-submit]'
 })
 export class SampleDirective {
+
+    @HostListener('change', ['$event'])
+    onChange(e) {
+        // todo check if it passes $event to function
+        return this.setFileInput(e);
+    }
 
     protected formData: FormData = new FormData();
 
