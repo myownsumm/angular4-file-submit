@@ -1,18 +1,18 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {SampleDirective} from './sample.directive';
+import {FileSubmitDirective} from './file-submit.directive';
 
-export * from './sample.directive';
+export * from './file-submit.directive';
 
 @NgModule({
     imports: [
         CommonModule
     ],
     declarations: [
-        SampleDirective,
+        FileSubmitDirective,
     ],
     exports: [
-        SampleDirective,
+        FileSubmitDirective,
     ]
 })
 export class SampleModule {

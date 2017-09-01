@@ -3,7 +3,7 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
 @Directive({
     selector: '[ng4-file-submit]'
 })
-export class SampleDirective {
+export class FileSubmitDirective {
 
     @HostListener('change', ['$event'])
     onChange(e) {
