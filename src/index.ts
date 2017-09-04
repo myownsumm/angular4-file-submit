@@ -15,10 +15,10 @@ export * from './file-submit.directive';
         FileSubmitDirective,
     ]
 })
-export class SampleModule {
+export class FileSubmitModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: SampleModule,
+            ngModule: FileSubmitModule,
             providers: []
         };
     }
