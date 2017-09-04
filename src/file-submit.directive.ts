@@ -4,15 +4,13 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
     selector: '[ng4-file-submit]'
 })
 export class FileSubmitDirective {
-
     @HostListener('change', ['$event'])
     onChange(e) {
         // todo check if it passes $event to function
         return this.setFileInput(e);
     }
 
-    protected formData: FormData = new FormData();
-
+    protected formData: FormData;
 
     constructor(private el: ElementRef) {
     }
@@ -24,6 +22,7 @@ export class FileSubmitDirective {
             throw new Error('no file selected');
         }
 
-        this.formData.set('file', file);
+        this.formData = new FormData();
+        this.formData.append('file', file);
     }
 }
