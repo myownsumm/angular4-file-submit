@@ -1,6 +1,6 @@
 {
   "name": "angular4-file-submit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/myownsumm/angular4-notify"
+    "url": "https://github.com/myownsumm/angular4-file-submit"
   },
   "author": {
     "name": "alexander.poltoratskiy",
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/myownsumm/angular4-notify/issues"
+    "url": "https://github.com/myownsumm/angular4-file-submit/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
