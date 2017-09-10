@@ -25,4 +25,8 @@ export class FileSubmitDirective {
         this.formData = new FormData();
         this.formData.append('file', file);
     }
+
+    public getFormData() {
+        return this.formData;
+    }
 }
