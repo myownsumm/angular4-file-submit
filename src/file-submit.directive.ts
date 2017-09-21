@@ -5,12 +5,12 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
 })
 export class FileSubmitDirective {
     @HostListener('change', ['$event'])
+
     onChange(e) {
-        // todo check if it passes $event to function
         return this.setFileInput(e);
     }
 
-    protected formData: FormData;
+    protected formData: FormData = new FormData();
 
     constructor(private el: ElementRef) {
     }
